@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <style>
+        .cron{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            border: none;
+        }
+        .btn1{
+            background-color: green; 
+            color: white;               
+            
+        }
+        .btn2{
+            background-color: red;  
+        }
+        .btn3{
+            background-color: yellow;
+            
+        }
+        .btn1,
+        .btn2,
+        .btn3{
+            font-family: Arial, Helvetica, sans-serif;
+           border: none;
+           padding: 15px;
+           border-radius: 10px;
+           cursor: pointer;
+
+        }
+        .cron :hover{
+            background-color: rgba(68, 171, 68, 0.733);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="cron">
+        <h1 id="cro">00:00:00</h1>
+        <button class="btn1" onclick="inicio()">Inicio</button>
+        <button  class="btn2" onclick="parar()">Parar</button>
+        <button  class="btn3"onclick="zerar()">Zerar</button>
+
+    </div>
+  <script src="cronometro.js"></script>
+</body>
+</html>
